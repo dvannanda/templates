@@ -1,0 +1,14 @@
+/* 
+avoid page breaks inside of table when printing in chrome: 
+!important -> to override rmd defaults when knitting in R
+*/
+  
+@media print {
+  table {
+  page-break-inside: avoid !important;
+  }
+  
+  .container-fluid {
+  display:block !important;
+  }
+}
